@@ -80,7 +80,7 @@ margin-top: 28px;
 	text-align: center;
 }
 .buttondown img {
-	width: 34 px;
+	width: 34px;
 	margin-top: 355px;
 }
 .categories {
@@ -143,7 +143,7 @@ margin-top: 28px;
 	flex-wrap: wrap;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around 90px;
+	justify-content: space-around;
 	height:100%;
 }
 .stripe1 {
@@ -164,7 +164,7 @@ align-self: center;
 text-transform: uppercase;
 color: #424242;
 font-weight: bold;
-font-family: font-family: 'Quicksand', sans-serif;
+font-family: 'Quicksand', sans-serif;
 align-self: center;
 }
 .menclothes {
@@ -194,7 +194,7 @@ align-self: center;
 text-transform: uppercase;
 color: #424242;
 font-weight: bold;
-font-family: font-family: 'Quicksand', sans-serif;
+font-family: 'Quicksand', sans-serif;
 align-self: center;
 }
 .womenclothes {
@@ -219,7 +219,7 @@ align-self: center;
 	justify-content: space-around;
 	align-items: center;
 	font-weight: bold;
-	font-family: font-family: 'Quicksand', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 .aboutus {
 	height: 250px;
