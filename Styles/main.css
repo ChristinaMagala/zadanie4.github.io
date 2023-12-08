@@ -1,0 +1,485 @@
+*{
+	margin:0;
+	padding: 0;
+}
+h1 {
+	font-size: 60px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	color:#ffffff;
+	line-height: 60px;
+}
+h5 {
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	color:#ffffff;
+	text-transform: uppercase;
+
+}
+.banner {
+	background: url(../img/background.jpg) no-repeat center top / cover; /* .. это выход из текущей директории,  cover растягивает на всю ширену*/
+	padding-bottom:48px;
+}
+/*.clearfix:after {
+	content: "";
+	display:table;
+	clear:both;
+}*/
+.container  {
+	width: 1280px;
+	margin: 0 auto;
+}
+.navbar {
+	padding-top: 40px;
+}
+.navbar img{
+	width:  53px;
+	float:left;
+}
+nav {
+	float: right;
+	margin-top: 13px;
+}
+nav li{
+	display:inline-block; /* позволяет строчным компонентам иметь свойства блочных (задавать внутренние и внешние отступы сверху и снизу) */
+		margin-right: 50px;
+}
+nav li:last-child {
+	margin-right: 0px;
+}
+nav a {
+	text-decoration: none; /* убирает все стандартные стили*/
+	color: #ffffff;
+/*	text-transform: uppercase;  верхний регистр*/
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+
+}
+#cart img {
+	width: 24px;
+}
+header {
+	margin: 0 auto;
+	text-align: center;
+	width: 800px;
+	margin-top: 240px;
+}
+header p {
+	margin: 0 auto;
+	text-align: center;
+	width: 500px;
+font-size: 20px;
+color: #ffffff;
+font-family: 'Quicksand', sans-serif;
+margin-top: 28px;
+}
+.nav_button {
+	margin:0 auto;
+	text-align: center;
+}
+.buttondown img {
+	width: 34 px;
+	margin-top: 355px;
+}
+.categories {
+	background-color: #f5f6f7;
+	height: 145px;
+	font-size: 18px;
+	color: #000000;
+	font-family: 'Quicksand', sans-serif;
+}
+.categories a {
+	text-decoration: none;
+	width: 204px;
+	height: 35px;
+	border-radius: 3px;
+	background-color: #aa9b77;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+	float: right;
+	margin-top: 50px;
+	padding-top: 18px;
+}
+.checkbox {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 400px;
+	float:left;
+	margin-top: 65px;
+}
+.floot {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #999;
+    border-radius: 4px;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+   }
+.floot:checked::before {
+    content: '\2714'; 
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    line-height: 25px;
+    color: #aa9b77;
+   }
+
+.floot:checked {
+    background-color: white;  
+	border: 2px solid #aa9b77;
+   }
+.content {
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around 90px;
+	height:100%;
+}
+.stripe1 {
+	width: 996px;
+height: 2px;
+background-color: #cccccc;
+align-self: center;
+}
+.men {
+	padding-top:90px;
+	flex-wrap: wrap;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+.men p {
+	font-size: 20px;
+text-transform: uppercase;
+color: #424242;
+font-weight: bold;
+font-family: font-family: 'Quicksand', sans-serif;
+align-self: center;
+}
+.menclothes {
+	padding-top:90px;
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction:row;
+	justify-content: space-around;
+	width:100%;
+}
+.stripe2 {
+	width: 996px;
+height: 2px;
+background-color: #cccccc;
+align-self: center;
+}
+.women {
+	padding-top:90px;
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction:row-reverse;
+	justify-content: space-around;
+	
+}
+.women p {
+	font-size: 20px;
+text-transform: uppercase;
+color: #424242;
+font-weight: bold;
+font-family: font-family: 'Quicksand', sans-serif;
+align-self: center;
+}
+.womenclothes {
+	padding-top:90px;
+	padding-bottom:130px;
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction:row-reverse;
+	justify-content: space-around;
+	width:100%;
+}
+.content a:hover {
+	color: #aa9b77;
+	
+	border: 6px solid #aa9b77;
+}
+.end {
+	
+	display:flex;
+	height: 402px;
+	background-color: #aa9b77;
+	justify-content: space-around;
+	align-items: center;
+	font-weight: bold;
+	font-family: font-family: 'Quicksand', sans-serif;
+}
+.aboutus {
+	height: 250px;
+	width: 710px;
+	position: relative;
+  
+    border: 2px solid #918363;
+   
+   
+}
+.about {
+      position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0 15px;
+    transform: translateX(-50%) translateY(-15px);
+    font-size: 20px;
+    font-weight: bold;
+	font-family:'Quicksand', sans-serif;
+    text-transform: uppercase;
+    color: #837659;
+    background: #aa9b77;
+}
+.aboutus p {
+	width: 490px;
+height: 161px;
+font-size: 16px;
+line-height: 24px;
+color: #424242;
+font-weight: bold;
+font-family: 'Quicksand', sans-serif;
+text-align: center;
+margin-left: 115px;
+margin-top: 90px;
+}
+footer {
+	display:flex;
+	flex-direction:column;
+	height: 424px;
+}
+.email {
+	display:flex;
+	
+	flex-direction:row;
+	height: 72px;
+background-color: #535253;
+}
+.twitter {
+	padding-left: 50px;
+	align-self:center;
+}
+.link {
+	padding-left:20px;
+	align-self:center;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+}
+.bottom {
+	display:flex;
+	justify-content: space-between;
+	flex-direction: row;
+	height: 352px;
+background-color: #424242;
+}
+.trekking {
+		padding-left: 50px;
+	align-self:center;
+	width: 320px;
+}
+.trekking p {
+	font-size: 10px;
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+		font-weight: bold;
+}
+.contact {
+	align-self:center;
+	display:flex;
+	flex-direction:column;
+	align-items: flex-end ;
+	
+}
+.navcont li{
+	display:inline-block; /* позволяет строчным компонентам иметь свойства блочных (задавать внутренние и внешние отступы сверху и снизу) */
+		margin-right: 20px;
+}
+.navcont li:last-child {
+	margin-right: 50px;
+}
+.navcont a {
+	text-decoration: none; /* убирает все стандартные стили*/
+	color: #ffffff;
+	text-transform: uppercase; 
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+.textend p {
+	font-size: 18px;
+	color: #ffffff;
+	
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	margin-right: 50px;
+	
+}
+@media only screen and (min-width:768px) and (max-width:1023px) {
+	.container {
+		width: 768px;
+	}
+	.content {
+		width:768px;
+	}
+	.men {
+		width:768px;
+	}
+	
+	.women {
+		width:768px;
+	}
+}
+@media only screen and (min-width:480px) and (max-width:767px) {
+	.container {
+		width: 480px;
+	}
+	header {
+		width:100%;
+		
+	text-align: center;
+		
+	}
+	h1 {
+	font-size: 30px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	color:#ffffff;
+	line-height: 30px;
+	}
+	header p  {
+		width: 200px;
+		text-align: center;
+		font-size: 10px;
+	}
+	.content {
+		width:480px;
+	}
+	.men {
+		width:480px;
+	}
+	
+	.women {
+		width:480px;
+	}
+	.checkbox {
+		width: 200px;
+	}
+	.aboutus {
+		width:80%;
+		
+	}
+	.aboutus p {
+		width:60%;
+		font-size: 10px;
+		margin-left: 20%;
+margin-top: 10%;
+	}
+	.about {
+		
+		 left: 50%;
+		 
+		  transform: translateX(-40%) translateY(-10px);
+		   padding: 0 2px;
+		   font-size: 12px;
+	}
+}
+@media only screen  and (max-width:479px) {
+	.container {
+		width: 100%;
+	}
+	header {
+		width:100%;
+		
+	text-align: center;
+		
+	}
+	h1 {
+	font-size: 20px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	color:#ffffff;
+	line-height: 20px;
+	}
+	header p  {
+		width: 70%;
+		text-align: center;
+		font-size: 10px;
+	}
+	.content {
+		width:100%;
+	}
+	.men {
+		width:100%;
+	}
+	
+	.women {
+		width:100%;
+	}
+	.checkbox {
+		width: 100%;
+	}
+	.aboutus {
+		width:80%;
+		
+	}
+	.aboutus p {
+		width:60%;
+		font-size: 10px;
+		margin-left: 20%;
+margin-top: 10%;
+	}
+	.about {
+		
+		 left: 50%;
+		 
+		  transform: translateX(-40%) translateY(-10px);
+		   padding: 0 2px;
+		   font-size: 12px;
+	}
+	.menclothes img {
+		width: 100%;
+	}
+	.womenclothes img {
+		width: 100%;
+	}
+	nav li {
+		margin-right: 10px;
+	}
+	nav a {
+		font-size: 8px;
+	}
+	.link {
+		font-size: 8px;
+	}
+	.trekking p {
+		font-size: 5px;
+	}
+	h5 {
+		font-size: 10px;
+	}
+	.navcont a {
+		font-size: 7px;
+	}
+	.textend p {
+		font-size: 5px;
+	}
+}
+
+
+
+
+ 
